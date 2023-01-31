@@ -1,7 +1,7 @@
 ### Hi there 👋
 YES
 <!--
-**baskaraedwin/baskaraedwin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+BaskaraEdwin.
 
 Here are some ideas to get you started:
 
