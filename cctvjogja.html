@@ -367,6 +367,46 @@ https://cctvjss.jogjakota.go.id/atcs/ATCS_Simpang_Mirota_View_Barat.stream/playl
 https://cctvjss.jogjakota.go.id/atcs/ATCS_Simpang_JatiKencana_Fix.stream/playlist.m3u8
 `;
 
+
+/* =============================
+   blokir inspek elemen
+============================= */
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+
+/* =============================
+   blokir Tombol Shortcut DevToolsn
+============================= */
+
+document.addEventListener('keydown', function(e) {
+  // Blokir F12
+  if (e.key === 'F12') {
+    e.preventDefault();
+  }
+  // Blokir Ctrl+Shift+I / Cmd+Opt+I dan shortcut DevTools lainnya
+  if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) {
+    e.preventDefault();
+  }
+  // Blokir Ctrl+U (View Source)
+  if ((e.ctrlKey || e.metaKey) && e.key === 'u') {
+    e.preventDefault();
+  }
+});
+
+
+
+/* =============================
+   blokir Trik debugger; (Infinite Loop)
+============================= */
+setInterval(function() {
+  debugger;
+}, 100);
+
+
+
+
 /* =============================
    SORT A-Z
 ============================= */
